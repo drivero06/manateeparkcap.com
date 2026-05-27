@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Manatee Park Capital</title>
+<meta name="description" content="Manatee Park Capital acquires and builds category-defining ecosystems in sports, media, and wellness.">
+<meta property="og:title" content="Manatee Park Capital">
+<meta property="og:description" content="Manatee Park Capital acquires and builds category-defining ecosystems in sports, media, and wellness.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --abyss:#0a1f2e;
+  --deep:#0f2d40;
+  --ocean:#16435c;
+  --gold:#d9a441;
+  --cream:#f4ece0;
+  --paper:#fbf7f0;
+  --muted:rgba(244,236,224,.55);
+  --rule:rgba(244,236,224,.18);
+}
+html{scroll-behavior:smooth}
+body{
+  font-family:'Cormorant Garamond','Georgia',serif;
+  background:var(--abyss);
+  color:var(--paper);
+  min-height:100vh;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  padding:48px 24px;
+  -webkit-font-smoothing:antialiased;
+  position:relative;
+  overflow:hidden;
+}
+body::before{
+  content:"";
+  position:fixed;
+  inset:0;
+  background:
+    radial-gradient(ellipse 80% 60% at 50% 0%, rgba(22,67,92,.4), transparent 70%),
+    radial-gradient(ellipse 60% 50% at 80% 100%, rgba(15,45,64,.5), transparent 60%);
+  pointer-events:none;
+}
+.container{
+  position:relative;
+  z-index:1;
+  max-width:560px;
+  width:100%;
+  text-align:center;
+}
+
+.mark{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  width:58px;height:58px;
+  border:1.5px solid rgba(244,236,224,.4);
+  border-radius:3px;
+  margin-bottom:40px;
+  position:relative;
+  animation:fadeDown .8s ease both;
+}
+.mark span{
+  font-family:'Cormorant Garamond',serif;
+  font-weight:600;
+  font-size:36px;
+  color:var(--cream);
+  letter-spacing:-0.5px;
+  line-height:1;
+}
+.mark::after{
+  content:"";
+  position:absolute;
+  bottom:-3px;left:0;right:0;
+  height:1.5px;
+  background:var(--gold);
+}
+
+h1{
+  font-family:'Cormorant Garamond',serif;
+  font-weight:600;
+  font-size:clamp(36px,5.5vw,52px);
+  color:var(--cream);
+  letter-spacing:.06em;
+  line-height:1.1;
+  margin-bottom:6px;
+  animation:fadeDown .8s .1s ease both;
+}
+.italic{
+  font-family:'Cormorant Garamond',serif;
+  font-weight:500;
+  font-style:italic;
+  font-size:clamp(32px,5vw,46px);
+  color:var(--gold);
+  letter-spacing:.08em;
+  margin-bottom:48px;
+  animation:fadeDown .8s .2s ease both;
+}
+
+.rule{
+  width:40px;height:1px;
+  background:rgba(244,236,224,.25);
+  margin:0 auto 40px;
+  animation:fadeDown .8s .3s ease both;
+}
+
+.tagline{
+  font-family:'Jost',sans-serif;
+  font-weight:400;
+  font-size:15px;
+  color:rgba(244,236,224,.6);
+  line-height:1.8;
+  max-width:440px;
+  margin:0 auto 52px;
+  letter-spacing:.02em;
+  animation:fadeDown .8s .4s ease both;
+}
+
+.pillars{
+  display:flex;
+  justify-content:center;
+  gap:32px;
+  margin-bottom:44px;
+  animation:fadeDown .8s .5s ease both;
+}
+.pillar{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:10px;
+}
+.pillar-icon{
+  width:44px;height:44px;
+  border:1px solid rgba(244,236,224,.15);
+  border-radius:10px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.pillar-icon svg{
+  width:20px;height:20px;
+  stroke:rgba(244,236,224,.45);
+  stroke-width:1.5;
+  fill:none;
+}
+.pillar-label{
+  font-family:'Jost',sans-serif;
+  font-size:11px;
+  letter-spacing:.2em;
+  text-transform:uppercase;
+  color:rgba(244,236,224,.4);
+  font-weight:400;
+}
+
+.rule2{
+  width:100%;max-width:200px;height:1px;
+  background:rgba(244,236,224,.18);
+  margin:0 auto 0;
+  animation:fadeDown .8s .6s ease both;
+}
+
+@keyframes fadeDown{
+  from{opacity:0;transform:translateY(-12px)}
+  to{opacity:1;transform:translateY(0)}
+}
+
+@media(max-width:480px){
+  body{padding:32px 16px}
+  .container{padding:48px 28px 40px;border-radius:16px}
+  .pillars{gap:20px;flex-wrap:wrap}
+  .mark{width:50px;height:50px;margin-bottom:32px}
+  .mark span{font-size:28px}
+  .italic{margin-bottom:36px}
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+  <div class="mark"><span>M</span></div>
+
+  <h1>Manatee Park</h1>
+  <div class="italic">Capital</div>
+
+  <div class="rule"></div>
+
+  <p class="tagline">Manatee Park Capital acquires and builds category-defining ecosystems in sports, media, and wellness.</p>
+
+  <div class="pillars">
+    <div class="pillar">
+      <div class="pillar-icon">
+        <svg viewBox="0 0 24 24"><path d="M6 9H4.5a2.5 2.5 0 010-5C7 4 7 7 7 7M18 9h1.5a2.5 2.5 0 000-5C17 4 17 7 17 7" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 22h16M10 14.66V17c0 1.1-.9 2.66-2 2.66M14 14.66V17c0 1.1.9 2.66 2 2.66M12 2v7M8 9h8a4 4 0 01-8 0z" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <span class="pillar-label">Sports</span>
+    </div>
+    <div class="pillar">
+      <div class="pillar-icon">
+        <svg viewBox="0 0 24 24"><path d="M7 4v16M17 4v16M3 8h4M17 8h4M3 12h18M3 16h4M17 16h4M7 2v2M17 2v2M7 20v2M17 20v2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <span class="pillar-label">Media</span>
+    </div>
+    <div class="pillar">
+      <div class="pillar-icon">
+        <svg viewBox="0 0 24 24"><path d="M19.5 13.572l-7.5 7.428-7.5-7.428A5 5 0 0112 6.006a5 5 0 017.5 7.566z" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <span class="pillar-label">Wellness</span>
+    </div>
+    <div class="pillar">
+      <div class="pillar-icon">
+        <svg viewBox="0 0 24 24"><path d="M3 12l3-3 3 3 3-6 3 6 3-3 3 3" stroke-linecap="round" stroke-linejoin="round"/><path d="M3 18h18" stroke-linecap="round"/></svg>
+      </div>
+      <span class="pillar-label">Entertainment</span>
+    </div>
+  </div>
+
+  <div class="rule2"></div>
+
+</div>
+
+</body>
+</html>
